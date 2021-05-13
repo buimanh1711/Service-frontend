@@ -64,6 +64,53 @@
   min-height: 40px;
 }
 
+#detail .detail-container .detail-rate ul li .rep {
+  display: none;
+  font-size: .8rem;
+  color: blue;
+  text-align: right;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+#detail .detail-container .detail-rate ul li .rep.active {
+  display: block
+}
+
+#detail .detail-container .detail-rate ul li .rep-comment {
+  display: none;
+}
+
+#detail .detail-container .detail-rate ul li .rep-comment.active {
+  display: block;
+}
+
+#detail .detail-container .detail-rate ul li .rep-comment textarea {
+  outline: none;
+  font-size: .9rem;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+#detail .detail-container .detail-rate ul li .rep-comment button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  background: rgb(57, 57, 253);
+  color: white;
+  cursor: pointer;
+}
+
+#detail .detail-container .detail-rate ul li .rep-comment .cls {
+  color: red;
+  font-size: .8rem;
+  display: block;
+  text-align: right;
+  cursor: pointer;
+}
+
 #detail .detail-container .detail-rate .user-rate {
   margin-top: 32px;
 }

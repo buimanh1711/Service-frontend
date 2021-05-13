@@ -157,18 +157,19 @@
                     <p class='content'>
                       Staring at the bottom of your glass
                     </p>
+                    <span class='rep active'>Trả lời <i class="fas fa-reply"></i></span>
+                    <div class='rep-comment'>
+                      <span class='cls'>Đóng <i class="fas fa-times"></i></span>
+                      <form class='rep-comment-form'>
+                        <textarea class="span6" rows="3" placeholder="Trả lời" name='comment'
+                          required></textarea>
+
+                        <button>Gửi</button>
+                      </form>
+                    </div>
                   </div>
                 </li>
-                <li>
-                  <div class='comment-container'>
-                    <p class="name">
-                      Bùi Văn Mạnh
-                    </p>
-                    <p class='content'>
-                      Staring at the bottom of your glass Staring at the bottom of your glass
-                    </p>
-                  </div>
-                </li>
+              
                 <li>
                   <div class='comment-container'>
                     <p class="name">
@@ -177,10 +178,44 @@
                     <p class='content'>
                       Staring at the bottom of your glass
                     </p>
+                    <span class='rep active'>Trả lời <i class="fas fa-reply"></i></span>
+                    <div class='rep-comment'>
+                      <span class='cls'>Đóng <i class="fas fa-times"></i></span>
+                      <form class='rep-comment-form'>
+                        <textarea class="span6" rows="3" placeholder="Trả lời" name='comment'
+                          required></textarea>
+
+                        <button>Gửi</button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class='comment-container'>
+                    <p class="name">
+                      Bùi Văn Mạnh
+                    </p>
+                    <p class='content'>
+                      Staring at the bottom of your glass
+                    </p>
+                    <span class='rep active'>Trả lời <i class="fas fa-reply"></i></span>
+                    <div class='rep-comment'>
+                      <span class='cls'>Đóng <i class="fas fa-times"></i></span>
+                      <form class='rep-comment-form'>
+                        <textarea class="span6" rows="3" placeholder="Trả lời" name='comment'
+                          required></textarea>
+
+                        <button>Gửi</button>
+                      </form>
+                    </div>
                   </div>
                 </li>
               </ul>
             </div>
+
+
+
             <div class='user-rate'>
               <form id='comment-form'>
                 <i style='color: rgb(204, 178, 32)' class="fas fa-star"></i>
@@ -218,6 +253,32 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const repList = document.querySelectorAll('#detail .detail-container .detail-rate ul li .rep')
+    const commentList = document.querySelectorAll('#detail .detail-container .detail-rate ul li .rep-comment')
+    const commentListClose = document.querySelectorAll('#detail .detail-container .detail-rate ul li .rep-comment .cls')
+
+    Array.from(repList).forEach((item, index) => {
+      item.addEventListener('click', () => {
+        Array.from(repList).forEach(item => {
+          item.classList.add('active')
+        })
+        item.classList.remove('active')
+        Array.from(commentList).forEach(item => {
+          item.classList.remove('active')
+        })
+        commentList[index].classList.add('active')
+      })
+    })
+
+    Array.from(commentListClose).forEach((item, index) => {
+      item.addEventListener('click', () => {
+        commentList[index].classList.remove('active')
+        repList[index].classList.add('active')
+      })
+    })
+  </script>
 </body>
 
 </html>
