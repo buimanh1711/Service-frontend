@@ -75,6 +75,11 @@
   padding: 4px 8px;
 }
 
+#detail .detail-container .detail-rate .user-rate .star {
+  margin: 8px;
+  outline: none;
+}
+
 #detail .detail-container .detail-rate .user-rate button {
   display: block;
   border: none;
