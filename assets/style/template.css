@@ -73,7 +73,11 @@
   font-size: 1.6rem;
 }
 
+#footer {
+  background: rgb(243, 243, 243);
+}
 #footer .footer-container {
+  margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
