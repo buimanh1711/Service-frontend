@@ -111,6 +111,26 @@
   cursor: pointer;
 }
 
+#detail .detail-container .detail-rate ul li .rep-comment ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+#detail .detail-container .detail-rate ul li .rep-comment ul li p {
+  font-size: .8rem;
+  background: rgb(238, 238, 238);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#detail .detail-container .detail-rate ul li .rep-comment ul li span {
+  font-size: .8rem;
+  margin-left: 4px;
+}
+ 
 #detail .detail-container .detail-rate .user-rate {
   margin-top: 32px;
 }
